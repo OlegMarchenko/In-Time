@@ -13,13 +13,13 @@ var gulp          = require('gulp'),
 gulp.task('sass', function () {
     return gulp.src('app/sass/**/*.scss')
         .pipe(sass())
-        .pipe(autoprefixer(['last 15 version', '> 1%', 'ie 8'], {cascade: true}))
+        .pipe(autoprefixer(['last 15 version', '> 1%', 'ie 10'], {cascade: true}))
         .pipe(gulp.dest('app/css'))
 });
 
 gulp.task('scripts', function () {
     return gulp.src([
-
+        'app/libs/jquery/dist/jquery.min.js'
         ])
         .pipe(concat('libs.min.js'))
         .pipe(uglifyjs())
@@ -53,7 +53,7 @@ gulp.task('img', function () {
         .pipe(gulp.dest('dist/img/'));
 });
 
-gulp.task('watch', ['css-libs', 'scripts'], function () {
+gulp.task('watch', ['css-libs', 'scripts', 'build'], function () {
     gulp.watch('app/sass/**/*.scss', ['sass']);
     gulp.watch('app/**/*.html');
     gulp.watch('app/js/*.js');

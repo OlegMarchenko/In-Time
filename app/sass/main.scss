@@ -1,0 +1,423 @@
+@font-face {
+  font-family: 'BauhausLightCTT';
+  src: url('../fonts/BauhausLightCTT.eot');
+  src: url('../fonts/BauhausLightCTT.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/BauhausLightCTT.woff') format('woff'),
+  url('../fonts/BauhausLightCTT.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src: url('../fonts/icomoon.eot?44z6hu');
+  src: url('../fonts/icomoon.eot?44z6hu#iefix') format('embedded-opentype'),
+  url('../fonts/icomoon.ttf?44z6hu') format('truetype'),
+  url('../fonts/icomoon.woff?44z6hu') format('woff'),
+  url('../fonts/icomoon.svg?44z6hu#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-fb:before {
+  content: "\e900";
+}
+
+.icon-lupa:before {
+  content: "\e901";
+}
+
+.icon-skype:before {
+  content: "\e902";
+}
+
+.icon-twitter:before {
+  content: "\e903";
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+form,
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Tahoma sans-serif;
+  font-size: 12px;
+  color: #333;
+}
+
+h4 {
+  text-transform: uppercase;
+  color: #555;
+  font-size: 12px;
+}
+
+.main-wrapper {
+  width: 100%;
+  min-width: 320px;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1011px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+header {
+  height: 106px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  a {
+    font: 48px/1.1 'BauhausLightCTT';
+    font-style: normal;
+    font-weight: 300;
+    color: #24b5e1;
+  }
+  span {
+    font: 17px/1.1 'Arial';
+    color: #000;
+    position: relative;
+    padding-left: 30px;
+    display: inline-block;
+    &:before {
+      content: '';
+      position: absolute;
+      width: 18px;
+      height: 28px;
+      background: url("../img/phone.png") no-repeat;
+      top: -50%;
+      left: 0;
+      transform: translateY(10%);
+    }
+  }
+}
+
+.nav {
+  background-color: #f2f2f2;
+  padding: 13px 0;
+  ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  a {
+    font: 15px/1 'Arial';
+    color: #393939;
+  }
+}
+
+.breadcrumb {
+  margin: 15px 0;
+  li {
+    display: inline-block;
+    position: relative;
+    padding-right: 20px;
+    &:before {
+      content: '';
+      position: absolute;
+      background: url("../img/arrowright.png") no-repeat;
+      width: 5px;
+      height: 5px;
+      right: 10px;
+      bottom: 25%;
+    }
+    &:last-child:before {
+      display: none;
+    }
+  }
+  a {
+    font-size: 11px;
+    color: #7c7c7c;
+    &.active {
+      text-decoration: underline;
+    }
+  }
+}
+
+.content-holder {
+  display: flex;
+  justify-content: space-between;
+  aside {
+    flex-basis: 233px;
+  }
+}
+
+.main-content {
+  flex-basis: 696px;
+  margin-right: 15px;
+}
+
+.main-list {
+  h1 {
+    font-size: 28px;
+    line-height: 1.1;
+    color: #212121;
+    margin-bottom: 32px;
+  }
+  h3 {
+    font-size: 18px;
+    margin: 44px 0 22px 0;
+  }
+  ul {
+    padding: 14px 0 29px 0;
+    border-bottom: 1px dotted #ccc;
+    li {
+      position: relative;
+      &:before {
+        position: absolute;
+        content: '';
+        width: 17px;
+        height: 1px;
+        background: #000;
+        top: 50%;
+        left: 0;
+      }
+    }
+    a {
+      padding-left: 32px;
+      color: #24b5e1;
+    }
+  }
+}
+
+.about-watches {
+  border-bottom: 1px dotted #ccc;
+  h4 {
+    margin: 30px 0 16px 0;
+  }
+  p {
+    margin-top: 20px;
+  }
+  .watches {
+    display: flex;
+    justify-content: space-between;
+  }
+  ol {
+    padding: 0;
+  }
+  li {
+    list-style: none;
+    line-height: 20px;
+  }
+}
+
+.statistics {
+  padding: 30px 0 33px 0;
+  border-bottom: 1px dotted #ccc;
+  h4 {
+    margin: 0;
+  }
+  table {
+    margin-top: 31px;
+    border-spacing: 0;
+    width: 100%;
+  }
+  tr,
+  td,
+  th {
+    font-size: 11px;
+    font-weight: 400;
+  }
+  th {
+    color: #7d7d7d;
+    padding: 0 0 9px 0;
+    text-align: left;
+    &:first-child {
+      padding-left: 14px;
+    }
+  }
+  td {
+    padding: 14px 0;
+    &:nth-child(2) {
+      color: #24b6e1;
+    }
+    &:first-child {
+      padding-left: 14px;
+    }
+  }
+  a {
+    color: #24b6e1;
+    text-decoration: underline;
+  }
+  tr {
+    &:nth-child(even) {
+      background-color: #fbfafb;
+    }
+  }
+}
+
+#tabs {
+  margin: 30px 0;
+  border-bottom: 1px dotted #ccc;
+  h4 {
+    margin: 0;
+  }
+  ul {
+    margin: 33px 0 0 0;
+  }
+  li {
+    display: inline-block;
+    margin-right: 6px;
+    border-radius: 3px;
+    background-color: #eaeaea;
+    outline: none;
+  }
+  a {
+    line-height: 30px;
+    color: #000;
+    padding: 0 16px;
+    outline: none;
+  }
+  #tabs-1,
+  #tabs-2 {
+    min-height: 147px;
+  }
+  .ui-tabs-active {
+    background-color: #1eb6e2;
+    a {
+      color: #fff;
+    }
+  }
+}
+
+.top-form {
+  position: relative;
+  i {
+    position: absolute;
+    right: 3%;
+    top: 20%;
+    font-size: 18px;
+    color: #1fb7e3;
+  }
+}
+input[type="text"],
+input[type="email"]{
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  line-height: 27px;
+  width: 100%;
+  padding-left: 15px;
+  color: #444;
+}
+.news {
+  margin: 30px 0 44px 0;
+  h2 {
+    font-size: 22px;
+    color: #212121;
+    margin-bottom: 5px;
+  }
+}
+
+.title-box {
+  padding: 20px 0;
+  border-bottom: 1px dotted #ccc;
+  a {
+    font-size: 14px;
+    color: #24b5e1;
+    line-height: 22px;
+    text-decoration: underline;
+  }
+  span {
+    font-size: 11px;
+    color: #969696;
+    line-height: 22px;
+    display: block;
+  }
+  p {
+    font-size: 12px;
+    color: #333;
+    line-height: 18px;
+  }
+}
+.btn {
+  text-align: right;
+  margin: 22px 0 0 0;
+}
+.all-news {
+  background-color: #eaeaea;
+  color: #000;
+  font-size: 12px;
+  line-height: 22px;
+  border-radius: 3px;
+  padding: 3px 18px;
+  display: inline-block;
+}
+.aside-holder {
+  margin-right: 3px;
+}
+fieldset h2 {
+  font-size: 24px;
+  color: #212121;
+}
+input:nth-child(2) {
+  margin-bottom: 15px;
+}
+.subscribe-btn {
+  background-color: #1fb6e2;
+  color: #fff;
+  padding: 3px 23px;
+}
+.footer-holder {
+  height: 52px ;
+  display: flex;
+  justify-content: space-between;
+  p {
+    font-size: 11px;
+    line-height: 20px;
+    color: #7c7c7c;
+  }
+  a {
+    color: #24b5e1;
+    text-decoration: underline;
+  }
+}
+.social-links {
+  li {
+    display: inline-block;
+  }
+  a {
+    color: #b9b9b9;
+    text-decoration: none;
+    font-size: 25px;
+    &:hover {
+      color: #1fb6e2;
+    }
+  }
+}
