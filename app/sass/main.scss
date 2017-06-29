@@ -140,6 +140,9 @@ header {
   a {
     font: 15px/1 'Arial';
     color: #393939;
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
 
@@ -213,6 +216,9 @@ header {
     a {
       padding-left: 32px;
       color: #24b5e1;
+      &:hover {
+        text-decoration: none;
+      }
     }
   }
 }
@@ -304,6 +310,9 @@ header {
     color: #000;
     padding: 0 16px;
     outline: none;
+    &:hover {
+      text-decoration: underline;
+    }
   }
   #tabs-1,
   #tabs-2 {
@@ -353,6 +362,9 @@ input[type="email"]{
     color: #24b5e1;
     line-height: 22px;
     text-decoration: underline;
+    &:hover {
+      text-decoration: none;
+    }
   }
   span {
     font-size: 11px;

@@ -313,7 +313,8 @@ input[type="email"] {
   .title-box a {
     font-size: 14px;
     color: #24b5e1;
-    line-height: 22px; }
+    line-height: 22px;
+    text-decoration: underline; }
   .title-box span {
     font-size: 11px;
     color: #969696;
@@ -358,4 +359,25 @@ input:nth-child(2) {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .footer-holder p {
+    font-size: 11px;
+    line-height: 20px;
+    color: #7c7c7c; }
+  .footer-holder a {
+    color: #24b5e1;
+    text-decoration: underline; }
+
+.social-links li {
+  display: inline-block; }
+
+.social-links a {
+  color: #b9b9b9;
+  text-decoration: none;
+  font-size: 25px; }
+  .social-links a:hover {
+    color: #1fb6e2; }
